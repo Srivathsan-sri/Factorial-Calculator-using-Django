@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Calculator</title>
+    
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .container{
+        height: 100vh;
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+      }
+      .main{
+        height: 300px;
+        width: 600px;
+        background-color: whitesmoke;
+        margin-top: 200px;
+        box-shadow: 5px 10px 8px 10px #888888;
+      }
+      .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      h2{
+        padding: 8%;
+        color: #2E1263;
+        text-decoration: overline;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      h4{
+        padding: 2%;
+      }
+      input[type=submit]{
+        background-color: #2E1263;
+        color: white;
+        border: 2px;
+        padding: 8px 16px;
+        cursor: pointer;
+        margin-top: 15px;
+      }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="main">
+        <div class="box">
+          <h2>Factorial Calculation</h2>
+         <form action="results">
+           <table>
+             <tr>
+               <td align="right">Enter a Numer:</td>
+               <td align="left"><input type="text" name="n1" required></td>
+             </tr>
+           </table>
+           <input type="submit">
+         </form>
+         <h4 align="left">Result:{{val}}</h4>
+
+        </div>
+        
+         
+       </div>
+
+    </div>
+    
+</body>
+</html>
